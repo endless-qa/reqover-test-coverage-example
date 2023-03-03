@@ -1,0 +1,1 @@
+Example of using Reqover API test coverage tool for a simple service
