@@ -29,32 +29,23 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>5.1.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
+            <version>5.3.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20220924</version>
-        </dependency>
-        <dependency>
-            <groupId>io.reqover</groupId>
-            <artifactId>reqover-java</artifactId>
-            <version>0.2.6</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/reqover-java-0.2.6.jar</systemPath>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.14.2</version>
+            <scope>test</scope>
         </dependency>
+
+
         <dependency>
             <groupId>io.kotest</groupId>
             <artifactId>kotest-runner-junit5-jvm</artifactId>
@@ -73,10 +64,11 @@
             <version>5.5.5</version>
         </dependency>
         <dependency>
-            <groupId>io.kotest</groupId>
-            <artifactId>kotest-property-jvm</artifactId>
-            <version>5.5.5</version>
-            <scope>test</scope>
+            <groupId>io.reqover</groupId>
+            <artifactId>reqover-java</artifactId>
+            <version>0.2.6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/reqover-java-0.2.6.jar</systemPath>
         </dependency>
     </dependencies>
 
@@ -139,5 +131,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
