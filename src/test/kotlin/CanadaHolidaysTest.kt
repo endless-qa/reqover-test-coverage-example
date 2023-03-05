@@ -46,15 +46,11 @@ class CanadaHolidaysTest : DescribeSpec({
         }
     }
 
-describe("When user requests all holidays") {
-    it("should return the holidays of the current year") {
-        specification.get("/holidays").statusCode.shouldBe(HttpStatus.SC_OK)
+    describe("When user requests all holidays") {
+        it("should return the holidays of the current year") {
+            specification.get("/holidays").statusCode.shouldBe(HttpStatus.SC_OK)
+        }
     }
-
-    it("should return the holidays of the current year") {
-        specification.get("/holidays").statusCode.shouldBe(HttpStatus.SC_OK)
-    }
-}
 
     describe("When user requests a holiday by ID") {
         it("should return the requested holiday for the current year") {
